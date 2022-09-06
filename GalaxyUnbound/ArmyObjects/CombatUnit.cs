@@ -2,67 +2,84 @@
 
 public class CombatUnit
 {
+    #region Private Data
+
+    private int _focusRemaining;
+    private int _focusMax;
+    private int _staminaRemaining;
+    private int _staminaMax;
+    private int _speed;
+    private int _agility;
+    private int _healthPoints;
+    private int _rangedSkill;
+    private int _meleeSkill;
+    private int _power;
+    private int _toughness;
+    private int _luck;
+
+    #endregion
+
     #region Properties
 
     /// <summary>
     /// Gets the current Focus value of the unit.
     /// </summary>
-    public int FocusCurrent { get; }
+    public int FocusRemaining => _focusRemaining;
 
     /// <summary>
     /// Gets the maximum Focus value of the unit.
     /// </summary>
-    public int FocusMax { get; }
+    public int FocusMax => _focusMax;
 
     /// <summary>
     /// Gets the current Stamina value of the unit.
     /// </summary>
-    public int StaminaCurrent { get; }
+    public int StaminaRemaining => _staminaRemaining;
 
     /// <summary>
     /// Gets the maximum Stamina value of the unit.
     /// </summary>
-    public int StaminaMax { get; }
+    public int StaminaMax => _staminaMax;
 
     /// <summary>
     /// Gets the Speed stat value of the unit.
     /// </summary>
-    public int Speed { get; }
+    public int Speed => _speed;
 
     /// <summary>
     /// Gets the Agility stat value of the unit.
     /// </summary>
-    public int Agility { get; }
+    public int Agility => _agility;
 
     /// <summary>
     /// Gets the Health Points stat value of the unit.
     /// </summary>
-    public int HealthPoints { get; }
+    public int HealthPoints => _healthPoints;
 
     /// <summary>
     /// Gets the Ranged Skill stat value of the unit.
     /// </summary>
-    public int RangedSkill { get; }
+    public int RangedSkill => _rangedSkill;
 
     /// <summary>
     /// Gets the Melee Skill stat value of the unit.
     /// </summary>
-    public int MeleeSkill { get; }
+    public int MeleeSkill => _meleeSkill;
 
     /// <summary>
     /// Gets the Power stat value of the unit.
     /// </summary>
-    public int Power { get; }
+    public int Power => _power;
 
     /// <summary>
     /// Gets the Toughness stat value of the unit.
     /// </summary>
-    public int Toughness { get; }
+    public int Toughness => _toughness;
 
     /// <summary>
     /// Gets the Luck stat value of the unit.
     /// </summary>
-    public int Luck { get; }
+    public int Luck => _luck;
 
     #endregion
 
