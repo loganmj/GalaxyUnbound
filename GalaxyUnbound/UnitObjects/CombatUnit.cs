@@ -2,6 +2,32 @@
 
 public class CombatUnit
 {
+    #region Enums
+
+    /// <summary>
+    /// The faction keywords
+    /// </summary>
+    public enum Factions
+    {
+        Blue,
+        Red,
+        Yellow
+    }
+
+    /// <summary>
+    /// The types of Combat Units
+    /// </summary>
+    public enum UnitTypes
+    {
+        Hero,
+        Core,
+        Elite,
+        Strike,
+        Heavy
+    }
+
+    #endregion
+
     #region Private Data
 
     private int _focusRemaining;
@@ -16,6 +42,7 @@ public class CombatUnit
     private int _power;
     private int _toughness;
     private int _luck;
+    private List<Member> _members;
 
     #endregion
 
@@ -80,6 +107,11 @@ public class CombatUnit
     /// Gets the Luck stat value of the unit.
     /// </summary>
     public int Luck => _luck;
+
+    /// <summary>
+    /// Gets the list of Members in this unit.
+    /// </summary>
+    public List<Member> Members => _members;
 
     #endregion
 
