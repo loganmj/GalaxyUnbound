@@ -2,6 +2,32 @@
 
 public class CombatUnit
 {
+    #region Enums
+
+    /// <summary>
+    /// The faction keywords
+    /// </summary>
+    public enum Factions
+    {
+        Blue,
+        Red,
+        Yellow
+    }
+
+    /// <summary>
+    /// The types of Combat Units
+    /// </summary>
+    public enum UnitTypes
+    {
+        Hero,
+        Core,
+        Elite,
+        Strike,
+        Heavy
+    }
+
+    #endregion
+
     #region Private Data
 
     private int _focusRemaining;
