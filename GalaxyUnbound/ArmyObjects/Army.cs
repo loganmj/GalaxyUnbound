@@ -35,7 +35,7 @@ public class Army
     /// Adds a Combat Unit to the Army.
     /// </summary>
     /// <param name="unit"></param>
-    public AddUnit(CombatUnit unit) 
+    public void AddUnit(CombatUnit unit) 
     {
         // TODO
     }
@@ -44,7 +44,7 @@ public class Army
     /// Removes a Combat Unit from the Army.
     /// </summary>
     /// <param name="unit"></param>
-    public RemoveUnit(CombatUnit unit) 
+    public void RemoveUnit(CombatUnit unit) 
     {
         // TODO
     }
